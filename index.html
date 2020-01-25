@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <style>
+            .green{
+                color: #3B8911;
+             }
+            .red{
+               color: #f00;
+            }
+            .yellow{
+               color: #ffd800;
+            }
+            .blue{
+                color: #0404B4;
+            }
+            .white{
+                color: #FFFFFF;
+            }
+            .brown{
+                color: #61210B;
+            }
+            .black{
+               color: #000;
+            }
+           body, html {
+  height: 100%;
+  /*height: auto;*/
+  margin: 0;
+  /*overflow: scroll;*/
+}
+.bg {
+  /* background of the page */
+ /* background-image: url("./images/olympic-games.jpg");*/
+  height: 100%;
+  margin-left: 2px;
+  margin-right: 20px;
+  /* Center and scale the image nicely */
+  background-position: center;
+  /*background-repeat: inherit;*/
+  /*background-size: cover;*/
+  background-color: #000;
+
+
+}
+/*img {
+ }*/
+            .div-1{
+  /*background-color: #ffe066;
+  width:400px;
+  height:55px;
+  border-radius:10px;
+  border : solid #000000  2px;
+  padding : 7px;
+  text-align:center;
+  font-size: 30px;
+  margin:10px;
+  text-decoration:none;*/
+  padding: 25px;
+  }
+a{
+  text-decoration:none;
+  color:black;
+}
+#games {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#games td, #games th {
+  border: 0px solid #ddd;
+  padding: 5px;
+  text-align: right;
+}
+
+/*#games tr:nth-child(even){background-color: #f2f2f2;}*/
+#games tr:nth-child{background-color: white;}
+#games tr:hover {background-color: white;}
+
+#games th {
+  padding-top: 12px;
+  padding-bottom: 0px;
+  text-align: center;
+  background-color: #C0C0C0/*#4CAF50*/;
+  color: white;
+  border-radius: 15px;
+  height: 45px;
+
+}
+.div-m{
+  margin-top: 150px;
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-bottom: 5px;
+}
+            header {
+                background-color: #000;
+                height: 69px;
+                opacity: 0.9;
+                font-size: 22px;
+                padding-left: 10px;
+                padding-top: 5px;
+                border-style: solid;
+                border-width: 1px;
+                border-bottom-color: seashell;
+                font-family: Helvetica;
+                /*margin-left: 0px;
+                margin-right: 10px;*/
+                width: 1320px;
+                position: fixed;
+                /*text-align: center;*/
+                z-index: 1;
+            }
+#montre {
+        /*text-align: left;*/
+        margin-bottom: 50%;
+        margin-left: 53%;
+        }
+#montre a{
+           color: seashell;
+           font-family: Helvetica;
+           font-size: 22px;  
+           text-decoration: underline;  
+           padding: 20px; 
+           opacity: 0.9;
+            }  
+.main{
+          /*position: relative;*/      
+          text-align: center;
+          width: 1200px;
+          height: 700px;
+          /*background-image: url("./images/img-mission-background.jpg"); */
+          background-position: center;
+          background-repeat: no-repeat;
+          margin-left: 4%;
+         /* color: #f00;*/
+          z-index: 2;       
+            }
+.main h2{
+        font-family: Helvetica;
+        font-size: 30px;  
+        position:absolute;
+        margin-top:24%;
+        width: 100%;
+        height: 100px;
+        background-color: #000;
+        color: seashell;
+        text-align: center;
+        padding-top: 20px; 
+        padding-bottom: 10px;
+        opacity: : 0.9;    
+            }
+h4{
+        color: seashell;
+        font-family: Helvetica;
+        font-size: 20px; 
+        color: seashell;
+        text-align: center;
+                
+            }
+#pict_tea{
+        margin-top:12.5%;
+        background-color: #000;
+        font-family: Helvetica;
+        color: seashell;
+        width: 1000px;   
+        margin-left:10%; 
+        margin-right:100px;
+        /*text-align: center;  
+        font-size: 25px;*/
+        } 
+#pict_tea p{
+          background-color: #000;
+          opacity: 0.9;
+          color: seashell;
+          font-family: Helvetica;
+          margin-left:300px; 
+          margin-right:100px;
+          text-align: center;  
+         font-size: 30px;
+        }
+.styl{
+         font-size: 22px;
+          color: seashell; 
+          font-family: Helvetica;
+          opacity: 0.9;
+          margin-bottom: 10px;            
+            }
+#pict1{
+        display: flex;
+        padding: 3px;
+        background-color: #000;
+        color: seashell;
+        width: 600px;   
+        margin-left:5%; 
+        margin-right:100px; 
+       text-align: center;     
+            }
+#pict2{
+        display: flex;
+        padding: 3px;
+        background-color: #000;
+        color: seashell;
+        width: 600px;   
+        margin-left:22%; 
+        margin-right:100px; 
+       text-align: center;     
+            }
+.mainf{
+          /*position: relative;*/
+          display: flex;      
+          text-align: center;
+          width: 1200px;
+          height: 700px;
+          background-image: url("./images/img-locations-background.jpg"); 
+          background-position: center;
+          background-repeat: no-repeat;
+          margin-left: 4%;
+         /* color: #f00;*/
+          z-index: 2;       
+            }
+.mainf h3{
+          
+        font-family: Helvetica;
+        font-size: 30px;  
+        position:absolute;
+        margin-top:5%;
+        margin-bottom: 15px;
+        width: 100%; 
+        color: seashell;
+        text-align: center;     
+            }
+.mainf p{
+        font-size: 22px;        
+        margin-top:10%;
+        margin-left: 5%;
+        background-color: #000;
+        color: seashell;
+        position:absolute;
+        opacity: 1;
+        z-index: 1;
+        width: 300px;
+        padding: 20px; 
+        margin-right:10%; 
+              
+            }
+.space{
+     padding: 25px;           
+            }
+.limite{
+         margin-left: 32%;    
+            } 
+.limite1{
+         margin-left: 65%;    
+            } 
+footer{
+  background-color: #000;
+  margin-top: 1%;
+  /*margin-left: 4%;*/
+  color: seashell;
+  text-align: left;
+  padding-left: 20px;
+  font-family: Helvetica;
+  margin-bottom: 25px; 
+ }  
+footer h5{
+  color: seashell;
+  text-align:center;
+  width: 200px;
+  margin-left: 43%; 
+  font-size: 30px;
+  margin-top: 1px;         
+ } 
+footer span{
+  color: seashell;
+  margin-left: 42%; 
+  text-align:center;
+  font-size: 22px;              
+} 
+footer span p{
+  color: seashell;
+  margin-left: 0.5%;
+  font-size: 20px;              
+}         
+</style>
+        <title>Tea Time</title>
+    </head>
+    <body class="bg">
+     <!--<div class="div-m">
+<table id="games" ><th>Football<img src="./images/football.jpg" title="Football games" width="50" height="50"></th><th>Basketball<img src="./images/basketball.jpg" title="Basketball games" width="50" height="50"></th><th>Tennis<img src="./images/tennis.jpg" title="tennis games" width="50" height="50"></th><th>Wrestling<img src="./images/wrestling.jpg" title="Wrestling games" width="50" height="50"></th>
+<tr>
+<td><span class="green">Cam</span><span class="red">er</span><span class="yellow">oun</span></td>
+<td><span class="blue">U.</span><span class="red">s.</span><span class="white">a</span></td>
+<td><span class="blue">Fr<span class="white">an</span><span class="red">ce</span></td>
+<td><span class="green">Sen</span><span class="yellow">eg</span><span class="red">al</span></td>
+</tr>
+<tr>
+<td><span class="black">Ge</span><span class="red">rm</span><span class="yellow">any</span></td>
+<td><span class="red">Ca</span><span class="white">na</span><span class="red">da</span></td>
+<td><span class="blue">U.</span><span class="red">s.</span><span class="white">a</span></td>
+<td><span class="red">Dane</span><span class="white">mark</span></td>
+</tr>
+</table>
+</div>-->
+<article>
+<header>
+   <img src="./images/img-tea-cozy-logo.png" title="ma chocolaterie" height="50px">
+   <span id="montre"><a href="#montre">Mission</a><a href="#montre">Featured Tea</a><a href="#montre">Locations</a></span>
+</header>
+</article>
+<article>
+    <div class="main">
+    <h2><b>Our Mission <span><br><h4> Handpicked, Artisanally Curated, Free Range, Sustainable, Small Batch, Fair Trade, Organic Tea  </span></b></h4></h2>
+    <img src="./images/img-mission-background.jpg">   
+    </div><!-- fin div main-->
+ </article>
+ <article>
+     <div id="pict_tea">
+       <p><b>Tea of the Month</b>
+       <br><span class="styl">What's Steeping at The Tea Cozy ? </span>
+       </p>
+     </div><!-- fin div pict_tea-->
+     <div id="pict1">
+  <figure>
+  <img src="./images/img-berryblitz.jpg" Titlt="Fall Berry Blitz Tea" width="300px" height="200px">
+  <figcaption class="styl">Fall Berry Blitz Tea.</figcaption>
+  </figure>
+   <figure>
+  <img src="./images/img-spiced-rum.jpg" title="Spiced Rum Tea" style="width:300px" style="height:200px ">
+  <figcaption class="styl">Spiced Rum Tea.</figcaption>
+  </figure>
+   <figure>
+  <img src="./images/img-donut.jpg" title="Seasonal Donuts" style="width:300px" style="height:200px ">
+  <figcaption class="styl">Seasonal Donuts.</figcaption>
+  </figure>
+     </div><!-- fin div pict1-->
+ <div id="pict2">
+     <figure>
+  <img src="./images/img-donut.jpg" Title="Fall Berry Blitz Tea" width="300px" height="200px">
+  <figcaption class="styl">Myrtle Ave Tea.</figcaption>
+  </figure>
+   <figure>
+  <img src="./images/img-bedford-bizarre.jpg" title="Spiced Rum Tea" style="width:300px" style="height:200px ">
+  <figcaption class="styl">Bedford Bizarre Tea.</figcaption>
+  </figure>
+ </div><!-- fin div pict2-->
+  <div class="mainf">
+   <h3>Locations</h3>
+    <p class=".styl">
+   <b>Downton</b>
+        <br><br>
+     <span class="space">384 West 4th St</span>
+        <br><br><br>
+      <span class="space">Suite 108</span>
+        <br><br>
+      <span class="space">Portland, Maine</span>
+   </p>
+    <span class="limite"><p>
+        <b>East Bayside</b>
+        <br><br>
+        3433 Phisherman's Avenue
+        <br><br><br>
+        (Nortwest Corner)
+        <br><br>
+       Portland, Maine
+        </p></span>
+   <span class="limite"><p> 
+       <b>Oakdale</b>
+       <br><br>
+        515 Crescent Avenue
+        <br><br><br>
+        Second Floor
+        <br><br>
+        Portland, Maine
+        </p></span>
+   </div><!-- fin second mainf-->
+ </article>
+<footer>
+    <h5><b>The Tea Cozy</b></h5>
+          <span>contact@theteacozy.com</span>
+          <span><p><b>917-555-8904</b></p></span> 
+          
+    <br>
+    <br>
+    copyright The Tea Cozy 2017
+</footer>
+    </body>
+</html>
